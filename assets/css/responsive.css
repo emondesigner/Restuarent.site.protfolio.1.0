@@ -164,7 +164,7 @@ h1{
         padding: 0 100px 0 20px;
       }
       #banner .banner_btn {
-        padding: 0 100px 0 20px;
+        padding: 0 0px 0 20px;
       }
       #banner .social_icon{
         padding: 0 100px 0 20px;
@@ -228,7 +228,7 @@ h1{
         padding: 20px 0;
       }
       #expert_chef .chef-details{
-       margin-left:85px;
+       /* margin-left:85px; */
       }
     .chef_info p {
         padding: 0 0px;
@@ -294,12 +294,9 @@ h1{
         text-align: center;
       }
       .footer_social_icon .social_icon ul  {
-        margin: 22px 0px 10px 140px;
+        margin:10px 0px 10px 100px;
       }
-      .footer_social_icon .social_icon ul li {
-        /* margin: 22px 0px 10px 190px; */
-        margin:0 15px;
-      }
+      
       .copyright span {
         color: var(--text-paragraph-color);
         text-align: center;
