@@ -1,0 +1,449 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/*------------------- COMMON CSS START -------------------*/
+:root{
+    /* Text Color */
+    --text-color:#101A24;
+    --text-color-white:#FFFFFF;
+    --text-paragraph-color:#5C6574;
+    --primary-color:#EA6D27;
+    --dark-color:#101A24;
+    --box-shadow:#fff;
+    --border-color:#fff;
+    --hover-color:rgb(60, 60, 223);
+    --bg-color-dark:#F1F3F4;
+
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.primary_btn{
+    padding: 16px 32px;
+    background-color:var(--primary-color);
+    color:var(--text-color-white);
+    border-top-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+}
+.primary_btn:hover{
+    background-color: var(--dark-color);
+}
+.dark_btn{
+    padding: 16px 32px;
+    background-color: var(--primary-color);
+    color:var(--text-color-white);
+    border-top-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+}
+.dark_btn:hover{
+    background-color:var( --dark-color);
+}
+h1{
+    font-size:60px ;
+    font-weight:700 ;
+    line-height:62px ;
+    color: var(--text-color);
+}
+p{
+    font-size:16px ;
+    color:var(--text-paragraph-color) ;
+    line-height: 29px;
+}
+a{
+    display: inline-block;
+}
+ h3{
+    font-size:55px ;
+    font-weight:700 ;
+    color:var(--text-color) ;
+    line-height: 55px;
+}
+
+/*------------------- COMMON CSS END ---------------------*/
+
+
+
+/* ---------------------------------NAVBAR SECTION START--------------------------------- */
+#nav{
+    margin-top:20px;
+}
+#nav .logo img{
+    width:120px;
+}
+#nav .menau ul li{
+    padding: 0px 12px;
+    
+}
+#nav .menau ul li a.nav-link{
+    color: var(--text-color);
+    position: relative;
+}
+#nav .menau ul li a.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0;
+    height: 2px;
+    background-color:var(--primary-color);
+    transition:0.4s ;
+}
+#nav .menau ul li:hover a::before{
+    width: 100%;
+}
+#nav .primary{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+/* ---------------------------------NAVBAR SECTION END--------------------------------- */
+
+
+/* ---------------------------------BANNER SECTION START--------------------------------- */
+#banner{
+    margin: 82px 0 158px 0;
+}
+#banner .banner_info h1{
+    margin-bottom: 65px;
+}
+#banner .banner_info p{
+    margin-bottom:18px;
+}
+#banner .banner_info .social_icon{
+    margin-top:85px;
+}
+#banner .banner_info .social_icon ul li{
+    width: 45px;
+    height: 45px;
+    background-color:transparent;
+    line-height:50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--dark-color);
+}
+#banner .banner_info .social_icon ul li i{
+    cursor: pointer;
+    color: var(--dark-color);
+    font-size: 24px;
+}
+#banner .banner_info .social_icon ul li:hover{
+
+    border: 1px solid var(--primary-color);
+}
+#banner .banner_info .social_icon ul li i:hover{
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+#banner .banner_info .primary_btn{
+    margin-left: 25px;
+}
+/* ---------------------------------BANNER SECTION END----------------------------------- */
+
+
+
+
+/* --------------------------Special Dishes Section start-------------------------- */
+#special_dishes {
+    background-color: var(--bg-color-dark);
+    padding-top: 92px;
+    padding-bottom: 325px;
+}
+#special_dishes .heading p{
+    padding: 0 347px;
+    margin: 21px 0 80px 0;
+}
+#special_dishes .dish_card{
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 23%;
+    margin-right:25px;
+    border: 1px solid orange;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+}
+#special_dishes .dish_card .dish_img{
+    overflow: hidden;
+}
+/* #special_dishes .dish_card {
+    width:23%;
+    margin-right: 20px;
+} */
+#special_dishes .dish_card .dish_info h4{
+    font-size:20px ;
+    color:var(--text-color) ;
+    line-height: 26px;
+}
+#special_dishes .dish_card{
+    transition: 0.4s;
+}
+#special_dishes .dish_card:hover{
+     background-color:orange;
+     transform: scale(1.1);
+     cursor: pointer;
+}
+/* --------------------------Special Dishes Section End---------------------------- */
+
+
+/* --------------------------OUR RESTAURANT SECTION START-------------------------- */
+.our_restaurant{
+    margin:124px 0 0px 0 ;
+}
+.our_restaurant .our_restaurant_info p{
+    padding: 30px 80px 10px 0;
+}
+.our_restaurant_btn .primary_btn{
+    margin-left: 25px;
+}
+/* --------------------------OUR RESTAURANT SECTION END---------------------------- */
+
+
+
+/* ---------------------------Expert chef Section Start--------------------------- */
+#expert_chef{
+    padding: 126px 0;
+}
+#expert_chef .chak{
+    width: 23px;
+    height: 23px;
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right:10px;
+    margin-top:5px;
+}
+#expert_chef .chef_info p{
+    margin-top: 21px;
+}
+#expert_chef .detail_info{
+    margin: 25px 0 33px 0;
+}
+#expert_chef .expert_chef_btn{
+    margin-top: 42px;
+}
+#expert_chef .expert_chef_btn .dark_btn{
+  margin:0 25px 0 57px ;
+}
+/* ---------------------------Expert chef Section ENd----------------------------- */
+
+/* ----------------------------NEWSLETTER SECTION START---------------------------- */
+#newsletter {
+    background-color: var(--bg-color-dark);
+    padding-bottom: 50px;
+}
+#newsletter .container{
+    background: rgba(0, 0, 0, 0.3);
+   padding:0;
+   border-radius: 20px;
+}
+#newsletter {
+    margin-bottom: 85px;
+}
+#newsletter .newsletter_info {
+    background-image: url(../images/Mask\ group.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 407px;
+    border-radius: 20px;
+    width: 100%;
+}
+#newsletter .newsletter_info h3{
+    color: var(--text-color-white);
+    padding: 96px 177px 57px 170px;
+    font-size:50Px ;
+    line-height:58px ;
+    font-weight:600 ;
+}
+#newsletter .newsletter_info form input{
+    height: 40px;
+}
+#newsletter .newsletter_info form input.email{
+    padding: 30px 150px 30px 17px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#newsletter .newsletter_info form button.email-submit-btn{
+    border: none;
+    border-radius: 20px;
+    padding:15px 25px;
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+}
+#newsletter .newsletter_info form{
+   
+    position: relative;
+}
+#newsletter .newsletter_info form button{
+    position: absolute;
+    right:10px;
+    top: 2px;
+}
+.input_group{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+/* ----------------------------NEWSLETTER SECTION END------------------------------ */
+
+
+/* ---------------------------------Footer Section Start--------------------------------- */
+#footer .footer-info p{
+    padding: 20px 0;
+}
+#footer .logo img{
+  max-width: 150px;
+}
+#footer .footer-info h5{
+    font-size:12px ;
+    color: var(--text-color);
+    font-weight:800 ;
+    line-height:40px ;
+    padding: 20px  0 15px 0;
+}
+#footer .opening_hours p{
+    padding:0;
+}
+#footer .opening_hours{
+    margin-bottom: 47px;
+}
+#footer .top{
+    border-bottom: 1px solid var(--text-paragraph-color);
+}
+#footer .top h4{
+    font-size:16px ;
+    line-height:40px ;
+    font-weight:600 ;
+    color:var(--text-color) ;
+    padding:10px 0 36px 0;
+}
+#footer ul li a{
+    color:var(--text-paragraph-color) ;
+    font-size: 16px;
+    line-height: 40px;
+}
+#footer ul li a:hover{
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+#footer .social_icon ul li{
+    width: 40px;
+    height: 40px;
+    background-color:transparent;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid var(--dark-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#footer .social_icon ul li:hover {
+    border-color: var(--primary-color);
+}
+#footer .social_icon ul li:hover i{
+    color: var(--primary-color);
+    transform: scale(1.5);
+}
+
+/* -----------Copy right section start----------- */
+.copyright {
+    padding: 30px 10px 10px 0;
+    margin:0 -12px 0 -12px;
+
+}
+.copyright span{
+    color: var(--text-paragraph-color);
+    margin-left: 10px;
+}
+.copyright i{
+    color: var(--text-paragraph-color);
+}
+.copyright  .privacy a{
+    color: var(--text-paragraph-color);
+    margin-left:30px;
+    transition: 0.4s;
+}
+.copyright  .privacy a:hover{
+    color: var(--primary-color);
+}
+/* -----------Copy right section end------------- */
+
+/* ---------------------------------Footer Section End----------------------------------- */
+
+
+
+/* ===========================CUSTOMER SECTION START=========================== */
+#customer {
+    padding-bottom: 117px;
+}
+#customer .customer_heading h3{
+    padding: 114px 0 18px 0;
+}
+#customer .customer_heading p{
+    padding: 0px 360px 100px 360px;
+}
+#customer {
+    background-color: var(--bg-color-dark);
+}
+
+#customer .customer_box {
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+#customer .card{
+    border:none;
+    text-align: center;
+    background-color:transparent;
+    margin: 20px;
+
+}
+.card_body{
+    background:var(--border-color);
+    margin-top: -50px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-bottom: 20px;
+}
+#customer .customer_box .customer_img img{
+    width: 110px;
+    background-color:var(--text-color-white);
+    border-radius: 50%;
+    margin: auto;
+}
+#customer .customer_box .icon i{
+    color: orange;
+    padding: 60px 0 38px 0;
+}
+.customer_info{
+    padding: 0 125px;
+}
+.customer_name{
+    font-size:16px ;
+    color: var(--text-color);
+    font-weight:700 ;
+    line-height:29px ;
+    margin-top:16px;
+}
+
+/* ===========================CUSTOMER SECTION END============================= */
